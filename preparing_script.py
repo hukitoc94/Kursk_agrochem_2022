@@ -63,7 +63,7 @@ def ploting( df, hue,  agrochem_property , aov ,stat_test_df, to_lable = "по �
     ax2 = plt.subplot2grid((3,2), (2, 0))
     ax3 = plt.subplot2grid((3,2), (2, 1))
     if len(df[hue].unique()) == 2:
-        pal =  "prism_r"
+        pal =  "prism"
     else:
         pal =  "tab10"
     sns.pointplot(data = df,
